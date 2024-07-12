@@ -1,0 +1,35 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.2'
+        classpath "io.realm:realm-gradle-plugin:10.15.1"
+
+        classpath 'com.google.android.gms:oss-licenses-plugin:0.10.4'
+            // Do not upgrade to >= 0.10.6 until they have a solution for this:
+            //      https://github.com/google/play-services-plugins/issues/252
+            // As in 0.10.6, the licenses file won't be generated in Debug Builds making it impossible
+            // for us to see the output before having the final signed APK.
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+//        maven {
+//            url 'https://github.com/uPhyca/stetho-realm/raw/master/maven-repo' // for Setho!
+//        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

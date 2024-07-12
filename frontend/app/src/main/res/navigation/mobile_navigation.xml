@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_status">
+
+    <fragment
+        android:id="@+id/nav_status"
+        android:name="de.thwildau.f4f.studycompanion.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_user_management"
+        android:name="de.thwildau.f4f.studycompanion.ui.users.UserManagementFragment"
+        android:label="@string/menu_user_management"
+        tools:layout="@layout/fragment_user_management" />
+
+    <fragment
+        android:id="@+id/nav_participant_management"
+        android:name="de.thwildau.f4f.studycompanion.ui.users.UserManagementFragment"
+        android:label="@string/menu_participant_management"
+        tools:layout="@layout/fragment_participant_management">
+        <argument
+            android:name="manageParticipants"
+            app:argType="boolean"
+            android:defaultValue="true" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_daily_questions"
+        android:name="de.thwildau.f4f.studycompanion.ui.questions.QuestionsFragment"
+        android:label="@string/menu_daily_questions"
+        tools:layout="@layout/fragment_questions" />
+
+    <fragment
+        android:id="@+id/nav_sensor_management"
+        android:name="de.thwildau.f4f.studycompanion.ui.sensors.SensorManagementTopFragment"
+        android:label="@string/menu_sensor_management"
+        tools:layout="@layout/fragment_sensor_management_top" />
+
+    <fragment
+        android:id="@+id/nav_participant_profile"
+        android:name="de.thwildau.f4f.studycompanion.ui.users.ParticipantProfileFragment"
+        android:label="@string/menu_participant_profile"
+        tools:layout="@layout/fragment_participant_profile" />
+
+    <fragment
+        android:id="@+id/nav_dev"
+        android:name="de.thwildau.f4f.studycompanion.ui.dev.DevFragment"
+        android:label="@string/menu_dev"
+        tools:layout="@layout/fragment_dev" />
+
+    <activity
+        android:id="@+id/nav_login"
+        android:name="de.thwildau.f4f.studycompanion.ui.login.LoginActivity"
+        android:label="@string/menu_login"
+        tools:layout="@layout/activity_login"
+        />
+
+    <activity
+        android:id="@+id/nav_qr"
+        android:name="de.thwildau.f4f.studycompanion.qr.QRCodeGeneratorActivity"
+        android:label="@string/menu_qr"
+        tools:layout="@layout/activity_qr_generator"
+        >
+    </activity>
+
+
+
+</navigation>

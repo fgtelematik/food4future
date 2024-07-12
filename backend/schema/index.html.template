@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>f4f StudyCompanion Backend</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      #root {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+        <h1>food4future StudyCompanion</h1>
+        <p><b>The Backend server is up and running.</b></p>
+        <p>
+          Download the <b>StudyCompanion Android App</b> (.APK) here:<br/><a href="$apk_url">$apk_url</a><br/>
+          <img src="download_app_qr.png" alt="QR Code for downloading the f4f StudyCompanion App via Smartphone"/>
+        </p>
+        <p><a href="/manage">Study Management Portal</a></p>
+    </div>
+  </body>
+</html>

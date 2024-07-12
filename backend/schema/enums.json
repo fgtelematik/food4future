@@ -1,0 +1,45 @@
+{ 
+	"enums" : 
+		[
+			{
+				"id": "gender",
+				"element_ids": [ "m", "f", "o" ],
+				"element_labels": [ "männlich", "weiblich", "divers" ]
+			},
+			{
+				"id": "left_right",
+				"element_ids": [ "left", "right"],
+				"element_labels": [ "links", "rechts"]
+			},
+			{
+				"id": "role",
+				"element_ids": [ "Administrator", "Supervisor", "Nurse", "Participant" ],
+				"element_labels": [  "Administrator", "Supervisor", "Nurse", "Participant" ]
+			},
+			{
+				"id": "SensorDataType",
+				"element_ids": [ "Energy", "Pulse", "Temperature", "PulseOx", "HRV", "HR", "Acceleration"],
+				"element_labels": ["Energy", "Pulse", "Temperature", "PulseOx", "HRV", "HR", "Acceleration"]
+			},
+			{
+				"id": "side",
+				"element_ids": [ "left", "right"],
+				"element_labels": ["Left", "Right"]
+			},
+			{
+				"id": "ConsultationType",
+				"element_ids": ["anamnesis", "intermediate", "final", "other"],
+				"element_labels": ["Aufnahme", "Zwischenuntersuchung", "Abschlussuntersuchung", "Sonstige"]
+			},
+			{
+				"id": "OccupationType",
+				"element_ids": ["unemployed", "sitting", "moderate", "intensive"],
+				"element_labels": ["Sitzende Tätigkeiten", "Mäßige Bewegung", "Intensive Bewegung", "Keine Beschäftigung"]
+			},
+			{
+				"id": "SportsType",
+				"element_ids": ["jogging", "soccer", "handball", "volleyball", "badminton", "squash", "pe", "tennis", "pingpong", "dancing", "bowling", "other"],
+				"element_labels": ["Jogging", "Fußball", "Handball", "Volleyball",  "Federball/Badminton", "Squash", "Gymnastik", "Tennis", "Tischtennis", "Tanzen", "Kegeln/Bowling", "Sonstige (bitte angeben)"]
+			}
+		]
+}

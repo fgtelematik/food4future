@@ -1,0 +1,5 @@
+pyvenv_win*
+pyvenv_win/
+Smartphone-Einrichtung.pdf
+data
+.env

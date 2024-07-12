@@ -1,0 +1,265 @@
+{
+    "adts": {
+        "user": [
+            "username",
+            "hsz_identifier",
+            "role",
+            "email",
+            "new_password",
+            "anamnesis_data"
+        ],
+        "user_data": [
+            "containerBlank",
+            "effective_day",
+            "containerBlank",
+            "foodlist"
+        ],
+        "anamnesis_data": [
+            "study_begin_date",
+            "study_end_date"
+        ]
+    },
+    "schemas": [
+        {
+            "id": "anamnesis_data",
+            "label": "Participant Profile Data",
+            "datatype": "ADT",
+            "helpText": "Staff-managed data set containing study-relevant data about the participant",
+            "adt_enum_id": "anamnesis_data",
+            "maybeNull": true,
+            "permissions" : 
+                [{
+                    "role" : "all",
+                    "type" : "Read"
+                },
+                {
+                    "role" : "Nurse",
+                    "type" : "Edit"
+                }]
+        },
+        {
+            "id": "study_begin_date",
+            "label": "Start of study period",
+            "datatype": "DateType",
+            "defaultValue": "today",
+            "maybeNull": true,
+            "permissions": [
+                {
+                    "role": "all",
+                    "type": "Read"
+                },
+                {
+                    "role": "Nurse",
+                    "type": "Edit"
+                }
+            ]
+        },
+        {
+            "id": "study_end_date",
+            "label": "End of study period",
+            "datatype": "DateType",
+            "defaultValue": "today+55",
+            "maybeNull": true,
+            "permissions": [
+                {
+                    "role": "all",
+                    "type": "Read"
+                },
+                {
+                    "role": "Nurse",
+                    "type": "Edit"
+                }
+            ]
+        },
+        {
+            "id": "effective_day",
+            "label": "Day of study",
+            "helpText": "The values entered here apply to this day.",
+            "datatype": "DateType",
+            "maybeNull": false,
+            "permissions": [
+                {
+                    "role": "all",
+                    "type": "Read"
+                }
+            ]
+        },
+        {
+            "id": "foodlist",
+            "datatype": "FoodList",
+            "maybeNull": true,
+            "permissions": [
+                {
+                    "role": "Supervisor",
+                    "type": "Read"
+                },
+                {
+                    "role": "Participant",
+                    "type": "Edit"
+                }
+            ]
+        },
+        {
+            "id": "id",
+            "label": "ID",
+            "helpText": "an internal technical identifier for this dataset",
+            "datatype": "StringType",
+            "permissions": [
+                {
+                    "role": "Supervisor",
+                    "type": "Read"
+                }
+            ]
+        },
+        {
+            "id": "username",
+            "label": "Username",
+            "helpText": "Leave empty to auto-generate a random username",
+            "datatype": "StringType",
+            "maybeNull": true,
+            "permissions": [
+                {
+                    "role": "Nurse",
+                    "type": "Edit"
+                }
+            ]
+        },
+        {
+            "id": "role",
+            "label": "Role",
+            "defaultValue": "Participant",
+            "datatype": "EnumType",
+            "adt_enum_id": "role",
+            "permissions": [
+                {
+                    "role": "Nurse",
+                    "type": "Read"
+                }
+            ]
+        },
+        {
+            "id": "new_password",
+            "label": "Set New Password",
+            "helpText": "Leave empty to keep current password or to generate a random password for a newly created participant profile.",
+            "datatype": "StringType",
+            "maybeNull": true,
+            "permissions": [
+                {
+                    "role": "all",
+                    "type": "Edit"
+                }
+            ]
+        },
+        {
+            "id": "containerBlank",
+            "datatype": "Container",
+            "permissions": [
+                {
+                    "role": "all",
+                    "type": "Read"
+                }
+            ]
+        },
+        {
+            "id": "hsz_identifier",
+            "label": "Participant Reference",
+            "helpText": "Reference string, which uniquely identifies the participant.\nCan be read via QR scanner.",
+            "datatype": "StringType",
+            "maybeNull": true,
+            "qrCodeInput": true,
+            "permissions": [
+                {
+                    "role": "Nurse",
+                    "type": "Edit"
+                }
+            ]
+        },
+        {
+            "id": "email",
+            "label": "E-mail",
+            "helpText": "You can enter an e-mail address here, to which the login information (username, password and QR code) should be sent once. This e-mail address will then be discarded immediately and not stored.",
+            "datatype": "StringType",
+            "maybeNull": true,
+            "permissions": [
+                {
+                    "role": "Participant",
+                    "type": "Edit"
+                },
+                {
+                    "role": "Nurse",
+                    "type": "Edit"
+                }
+            ]
+        },
+        {
+            "id": "no_user_data_fields",
+            "label": "Information",
+            "helpText": "There are no daily questions defined for this study.",
+            "datatype": "Container",
+            "permissions": [
+                {
+                    "role": "all",
+                    "type": "Read"
+                }
+            ]
+        },
+        {
+            "id": "no_static_data_fields",
+            "label": "Information",
+            "helpText": "There are no user profile data fields defined for this study.",
+            "datatype": "Container",
+            "permissions": [
+                {
+                    "role": "all",
+                    "type": "Read"
+                }
+            ]
+        }
+    ],
+    "enums": [
+        {
+            "id": "FoodType",
+            "label": "Select Food Consumption",
+            "helpText": "No initial food list has been configured for this study yet.",
+            "element_ids": [],
+            "element_labels": [],
+            "element_image_urls": []
+        },
+        {
+            "id": "role",
+            "element_ids": [
+                "Administrator",
+                "Supervisor",
+                "Nurse",
+                "Participant"
+            ],
+            "element_labels": [
+                "Administrator",
+                "Supervisor",
+                "Nurse",
+                "Participant"
+            ]
+        },
+        {
+            "id": "SensorDataType",
+            "element_ids": [
+                "Energy",
+                "Pulse",
+                "Temperature",
+                "PulseOx",
+                "HRV",
+                "HR",
+                "Acceleration"
+            ],
+            "element_labels": [
+                "Energy",
+                "Pulse",
+                "Temperature",
+                "PulseOx",
+                "HRV",
+                "HR",
+                "Acceleration"
+            ]
+        }
+    ]
+}

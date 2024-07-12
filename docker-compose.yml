@@ -1,0 +1,121 @@
+version: "3.8"
+
+# f4f Study Management Portal (Web App) and
+# f4f Study Companion Backend Server and
+# f4f Study Companion Android App
+#
+#  Copyright (c) 2024 Technical University of Applied Sciences Wildau
+#  Author: Philipp Wagner, Research Group Telematics
+#  Contact: fgtelematik@th-wildau.de
+#
+#  This program is free software; you can redistribute it and/or
+#  modify it under the terms of the GNU General Public License
+#  as published by the Free Software Foundation version 2.
+#
+#  This program is distributed in the hope that it will be useful,
+#  but WITHOUT ANY WARRANTY; without even the implied warranty of
+#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#  GNU General Public License for more details.
+#
+#  You should have received a copy of the GNU General Public License
+#  along with this program; if not, write to the Free Software
+#  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+
+# NOTE: Do NOT modify configurations in this file, 
+# if not absolutely necessary.
+# Set all configuration in the .env file instead. 
+
+services:
+  android:
+    container_name: f4f-android
+    image: f4f-android:latest
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile-android
+    volumes:
+      - ./data/apk:/dist
+
+  web-app:
+    container_name: f4f-web-app
+    image: f4f-web-app:latest
+    volumes:
+      - ./data/web-app:/dist
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile-web-app
+
+  backend:
+    container_name: f4f-backend
+    # entrypoint: /bin/bash # For Debugging
+    image: f4f-backend:latest
+    depends_on:
+      - mongodb
+      - web-app
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile-backend
+    volumes:
+      - ./data/web-app:/opt/web-app
+      - ./data/apk:/opt/f4f-backend/apk
+      - ./data/food_images:/opt/f4f-backend/images
+    environment:
+      - F4F_MONGODB_HOST=mongodb
+      - F4F_MONGODB_PORT=27017
+      - F4F_MONGODB_DATABASE=food4future
+      - F4F_MONGODB_USERNAME=food4future
+      - F4F_MONGODB_PASSWORD=food4future
+      - F4F_MONGODB_AUTHSOURCE=admin
+      - F4F_WEB_APP_PATH=/opt/web-app
+      - F4F_RESET_MANAGER_USERNAME=$RESET_MANAGER_USERNAME
+      - F4F_RESET_MANAGER_PASSWORD=$RESET_MANAGER_PASSWORD
+      - F4F_APK_FILE=f4fstudycompanion.apk
+      - F4F_SMTP_SERVER=$SMTP_SERVER
+      - F4F_SMTP_PORT=$SMTP_PORT
+      - F4F_SMTP_USE_STARTTLS=$SMTP_USE_STARTTLS
+      - F4F_SMTP_USER=$SMTP_USER
+      - F4F_SMTP_PASSWORD=$SMTP_PASSWORD
+      - F4F_SMTP_FROM=$SMTP_FROM
+      # TODO: In docker entrypoint, set F4F_PUBLIC_BASE_URL to proper URL build up from schema, host and port
+    
+  mongodb:
+    container_name: f4f-mongodb
+    image: mongodb/mongodb-community-server:6.0.11-ubuntu2204
+    restart: always
+    user: root
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: food4future
+      MONGO_INITDB_ROOT_PASSWORD: food4future
+      MONGO_INITDB_DATABASE: food4future
+    volumes:
+      - ./docker/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+      - ./docker/db_init_data:/init_data:ro
+      - ./data/mongodb:/data/db
+
+  nginx:
+    image: nginx:1.25
+    container_name: f4f-nginx
+    depends_on:
+      - backend
+    volumes:
+      - ./docker/nginx:/templates
+      - "$HTTPS_CERT_PATH:/ssl/cert.pem:ro"
+      - "$HTTPS_KEY_PATH:/ssl/cert.key:ro"
+    ports:
+      - "$HTTP_PORT:80"
+      - "$HTTPS_PORT:443"
+    entrypoint: /templates/custom-entrypoint.sh
+    environment:
+      # Variables in template file are automatically substituted,
+      # see: https://github.com/docker-library/docs/tree/master/nginx#using-environment-variables-in-nginx-configuration-new-in-119
+      - NGINX_ENABLE_HTTPS=$ENABLE_HTTPS
+      - NGINX_HTTP_PORT=80
+      - NGINX_HOST_NAME=$HOST_NAME
+      - NGINX_BACKEND_HOST=backend
+      - NGINX_BACKEND_PORT=8000
+      - NGINX_APK_FILE=f4fstudycompanion.apk
+      - NGINX_HTTPS_PORT=443
+      - NGINX_HTTPS_CERT_PATH=/ssl/cert.pem
+      - NGINX_HTTPS_KEY_PATH=/ssl/cert.key
+
+

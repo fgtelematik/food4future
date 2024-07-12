@@ -1,0 +1,50 @@
+﻿/*
+ * f4f Study Management Portal (Web App)
+ *
+ * Copyright (c) 2024 Technical University of Applied Sciences Wildau
+ * Author: Philipp Wagner, Research Group Telematics
+ * Contact: fgtelematik@th-wildau.de
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation version 2.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+.editor-dialog-form {
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 500px;
+
+    .field-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+        width: 100%;
+
+
+    }
+
+    .field-row.stretch-first {
+        > :first-child {
+            width: 100%;
+        }
+    }
+    .field-row:not(.stretch-first) {
+        > div {
+            width: 100%;
+        }
+    }
+}
+

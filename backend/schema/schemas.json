@@ -1,0 +1,1420 @@
+{
+  "schemas": [
+    {
+      "id": "id",
+      "label": "ID",
+      "helpText": "an internal technical identifier for this dataset",
+      "datatype": "StringType",
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "role",
+      "label": "Role",
+      "defaultValue": "Participant",
+      "datatype": "EnumType",
+      "adt_enum_id": "role",
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "username",
+      "label": "Benutzername",
+      "helpText": "Feld leer lassen, um zufälligen Benutzernamen zu generieren.",
+      "datatype": "StringType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "new_password",
+      "label": "Neues Passwort festlegen",
+      "helpText": "Feld leer lassen, um aktuelles Passwort zu behalten bzw. für neu angelegte Person ein zufälliges Passwort zu generieren.",
+      "datatype": "StringType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "id",
+      "label": "ID",
+      "helpText": "an internal technical identifier for this dataset",
+      "datatype": "StringType"
+    },
+    {
+      "id": "hsz_identifier",
+      "label": "HSZ Identifikator",
+      "helpText": "Identifikator des Humanstudienzentrums.\nKann via QR-Code eingelesen werden.",
+      "datatype": "StringType",
+      "maybeNull": true,
+      "qrCodeInput": true,
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "anamnesis_data",
+      "label": "Studiendaten",
+      "datatype": "ADT",
+      "helpText": "Studienrelevante Daten aus der Anamnese und den ambulanten Untersuchungen",
+      "adt_enum_id": "anamnesis_data",
+      "maybeNull": false,
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "first_names",
+      "label": "Vorname(n)",
+      "maybeNull": true,
+      "datatype": "StringType",
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "last_name",
+      "label": "Last name",
+      "maybeNull": true,
+      "datatype": "StringType",
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "email",
+      "label": "E-Mail",
+      "helpText": "Sie können hier eine E-Mail-Adresse eingeben, an die einmalig die Anmeldeinformationen (Nutzername, Passwort und QR-Code) gesendet werden sollen. Diese E-Mail-Adresse wird danach sofort verworfen und nicht gespeichert.",
+      "datatype": "StringType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Edit"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "occupation",
+      "label": "Ausgeübte Tätigkeit",
+      "helpText": "Bitte beschreiben Sie die Art der Tätigkeit, der Sie hauptsächlich nachgehen.\nSitzende Tätigkeiten: z.B. Büro, Studium, ...\nMäßige Bewegung: z.B. Handwerk, Hauswirtschaft, Hausmeistertätigkeiten, ...\nIntensive Bewegung: z.B. Postzustellung, Wald- oder Bauarbeiten, ...",
+      "datatype": "EnumType",
+      "adt_enum_id": "OccupationType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "weight",
+      "label": "Gewicht",
+      "unitString": "kg",
+      "datatype": "FloatType",
+      "minValue": 10,
+      "maxValue": 300,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "birth_year",
+      "label": "Geburtsjahr",
+      "unitString": " ",
+      "datatype": "IntType",
+      "minValue": 1900,
+      "maxValue": 2020,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "gender",
+      "label": "Geschlecht",
+      "datatype": "EnumType",
+      "adt_enum_id": "gender",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "study_begin_date",
+      "label": "Beginn des Studienzeitraums",
+      "datatype": "DateType",
+      "defaultValue": "today",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "study_end_date",
+      "label": "Ende des Studienzeitraums",
+      "datatype": "DateType",
+      "defaultValue": "today+55",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "height",
+      "label": "Größe",
+      "unitString": "cm",
+      "datatype": "FloatType",
+      "minValue": 100,
+      "maxValue": 260,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "waist_size",
+      "label": "Taillenumfang",
+      "unitString": "cm",
+      "datatype": "FloatType",
+      "minValue": 50,
+      "maxValue": 200,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "hip_size",
+      "label": "Hüftumfang",
+      "unitString": "cm",
+      "datatype": "FloatType",
+      "minValue": 50,
+      "maxValue": 200,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+
+        {
+      "id": "containerStairs",
+      "datatype": "Container",
+      "label": "Treppen",
+      "helpText": "Falls Sie regelmäßig Treppen steigen, bitte geben Sie an:",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+
+        {
+      "id": "stairs_floors",
+      "label": "Anzahl der Stockwerke",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 100,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "stairs_times_per_day",
+      "label": "Wie häufig (durchschnittlich)",
+      "unitString": "mal pro Tag",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 100,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+
+
+
+    {
+      "id": "measurement_day",
+      "label": "Datum der Messung",
+      "datatype": "DateType",
+      "maybeNull": false,
+      "defaultValue": "today",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "bia_fat_mass",
+      "label": "Körperfettmasse",
+      "unitString": "g",
+      "datatype": "FloatType",
+      "minValue": 1000,
+      "maxValue": 50000,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "bia_musc_mass",
+      "label": "Muskelmasse",
+      "unitString": "g",
+      "datatype": "FloatType",
+      "minValue": 1000,
+      "maxValue": 50000,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "bia_phase_angle",
+      "label": "BIA-Phasenwinkel",
+      "unitString": "mDeg",
+      "datatype": "FloatType",
+      "minValue": 2000,
+      "maxValue": 12000,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "consultations",
+      "label": "Untersuchungstermine",
+      "datatype": "ListType",
+      "elements_type": "ADT",
+      "adt_enum_id": "consultation",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "consultation_date",
+      "label": "Datum",
+      "datatype": "DateType",
+      "defaultValue": "today+28",
+      "maybeNull": false,
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "consultation_time",
+      "label": "Uhrzeit",
+      "datatype": "TimeType",
+      "defaultValue": "now",
+      "maybeNull": false,
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "consultation_type",
+      "label": "Zweck",
+      "datatype": "EnumType",
+      "adt_enum_id": "ConsultationType",
+      "defaultValue": "intermediate",
+      "maybeNull": false,
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "consultation_notes",
+      "label": "Bemerkungen",
+      "datatype": "StringType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "general_health_state",
+      "label": "Allgemeiner Gesundheitszustand",
+      "helpText": "Wie würden Sie selbst Ihren Gesundheitszustand allgemein auf einer Skala von 1 bis 5 bewerten.",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "maybeNull": true,
+      "useSlider": true,
+      "sliderMinLabel": "nicht gesund",
+      "sliderMaxLabel": "gesund",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "wearing_arm",
+      "label": "Uhr-Tragearm",
+      "helpText": "Die Seite des Armes, an welchem Sie den Fitness Tracker tragen",
+      "datatype": "EnumType",
+      "adt_enum_id": "left_right",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "avg_sleep_start",
+      "label": "Schlafenszeit",
+      "helpText": "Die Uhrzeit, zu der Sie üblicherweise zu Bett gehen.",
+      "datatype": "TimeType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "avg_sleep_end",
+      "label": "Aufstehzeit",
+      "helpText": "Die Uhrzeit, zu der Sie üblicherweise in der Woche aufstehen.",
+      "datatype": "TimeType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "effective_day",
+      "label": "Studientag",
+      "helpText": "Die hier eingegebenen Werte gelten für den folgenden Tag.",
+      "datatype": "DateType",
+      "maybeNull": false,
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "containerWalk",
+      "datatype": "Container",
+      "label": "Wie viele Minuten waren Sie heute zu Fuß unterwegs, ...",
+      "helpText": "",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "walk_commute_minutes",
+      "label": "... auf dem Weg zur Arbeit oder zum Einkaufen, usw.?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "walk_active_minutes",
+      "label": "... zum Spazierengehen?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "containerBicycle",
+      "datatype": "Container",
+      "label": "Wie viele Minuten waren Sie heute mit dem Fahrrad unterwegs, ...",
+      "helpText": "",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "bicycle_commute_minutes",
+      "label": "... zur Arbeit oder zum Einkaufen usw.?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "bicycle_active_minutes",
+      "label": "... auf dem Heimtrainer bzw. auf Radtouren?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "containerGarden",
+      "datatype": "Container",
+      "label": "Falls Sie einen Garten haben, wie viele Minuten haben Sie heute dort verbracht, ...",
+      "helpText": "",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "garden_work_minutes",
+      "label": "... um Gartenarbeiten zu tätigen?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "garden_relax_minutes",
+      "label": "... zum Ausruhen und Erholen?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "containerOthers",
+      "datatype": "Container",
+      "label": "Weitere Fragen",
+      "helpText": "",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "swimming_minutes",
+      "label": "Wie  viele Minuten sind Sie heute geschwommen?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "sports_data",
+      "label": "Weitere körperliche Aktivitäten",
+      "helpText": "Haben Sie heute weiteren Sport gemacht, waren Tanzen oder Kegeln? Bitte in die Liste eintragen.",
+      "datatype": "ListType",
+      "elements_type": "ADT",
+      "adt_enum_id": "sports_entry",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "sports_type",
+      "label": "Sportart",
+      "helpText": "Welchen Sport haben Sie getrieben?",
+      "unitString": "Minuten",
+		"maybeNull": true,
+      "datatype": "EnumType",
+      "adt_enum_id": "SportsType",
+      "minValue": 0,
+      "maxValue": 1080,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "sports_type_other",
+      "label": "Sonstige",
+      "helpText": "Bitte benennen Sie die Sportart, falls Sie 'Sonstige' ausgewählt haben.",
+      "datatype": "StringType",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "sports_minutes",
+      "label": "Dauer",
+      "helpText": "Wie viele Minuten lang haben Sie diesen Sport getrieben?",
+      "unitString": "Minuten",
+      "datatype": "IntType",
+		"maybeNull": true,
+      "minValue": 0,
+      "maxValue": 1080,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "sunlight_time",
+      "label": "Wie viele Stunden haben Sie heute insgesamt im Freien verbracht?",
+      "unitString": "Stunden",
+      "datatype": "FloatType",
+		"maybeNull": true,
+      "minValue": 0,
+      "maxValue": 24,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "foodlist",
+      "label": "Was haben Sie heute gegessen?",
+      "datatype": "FoodList",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_1",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft waren Sie in den letzten 7 Tagen aufgewühlt, weil etwas unerwartetes passiert ist?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_2",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft haben sie sich in den letzten sieben Tagen in der Lage gefühlt, die wichtigen Dinge in Ihrem Leben kontrollieren zu können?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_3",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft haben Sie sich in den letzten sieben Tagen nervös oder gestresst gefühlt?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_4",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft waren Sie in den letzten sieben Tagen zuversichtlich, dass Sie fähig sind, Ihre persönlichen Probleme zu bewältigen?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_5",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft hatten Sie in den letzten sieben Tagen das Gefühl, dass sich die Dinge zu Ihren Gunsten entwickeln?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_6",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft hatten Sie in den letzten sieben Tagen den Eindruck, nicht all Ihren anstehenden Aufgaben gewachsen zu sein? ",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_7",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft waren Sie in den letzten sieben Tagen in der Lage, ärgerliche Situationen in Ihrem Leben zu beeinflussen?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_8",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft hatten Sie in den letzten sieben Tagen das Gefühl, alles im Griff zu haben?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_9",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft haben Sie sich in den letzten sieben Tagen über Dinge geärgert, über die Sie keine Kontrolle hatten?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "pss_10",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Wie oft hatten Sie in den letzten sieben Tagen das Gefühl, dass sich so viele Schwierigkeiten angehäuft haben, dass Sie diese nicht überwinden konnten?",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "useSlider": true,
+      "sliderMinLabel": "nie",
+      "sliderMaxLabel": "sehr oft",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "subjective_health_1",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Ich fühle mich grundsätzlich gesund.",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "useSlider": true,
+      "sliderMinLabel": "Trifft nicht zu",
+      "sliderMaxLabel": "Trifft zu",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "subjective_health_2",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Ich fühle körperliche Schmerzen.",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "useSlider": true,
+      "sliderMinLabel": "Keine Schmerzen",
+      "sliderMaxLabel": "Starke Schmerzen",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "subjective_health_3",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Ich fühle mich motiviert, mich zu bewegen.",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "useSlider": true,
+      "sliderMinLabel": "Trifft nicht zu",
+      "sliderMaxLabel": "Trifft zu",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "subjective_health_4",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Ich fühle mich kraftlos oder träge.",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "useSlider": true,
+      "sliderMinLabel": "Trifft nicht zu",
+      "sliderMaxLabel": "Trifft zu",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "subjective_health_5",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Ich fühle mich durch körperliche Beschwerden bei der Bewerkstelligung meines Tages eingeschränkt.",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "useSlider": true,
+      "sliderMinLabel": "Trifft nicht zu",
+      "sliderMaxLabel": "Trifft zu",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "subjective_health_6",
+		"maybeNull": true,
+      "label": "",
+      "helpText": "Ich fühle mich müde.",
+      "datatype": "IntType",
+      "minValue": 1,
+      "maxValue": 5,
+      "useSlider": true,
+      "sliderMinLabel": "Weniger als gewöhnlich",
+      "sliderMaxLabel": "Mehr als gewöhnlich",
+      "sliderStepSize": 1,
+      "permissions": [
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Participant",
+          "type": "Edit"
+        }
+      ]
+    },
+    {
+      "id": "containerBlank",
+      "datatype": "Container",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "containerSubjectiveHealth",
+      "datatype": "Container",
+      "label": "Körperliches Wohlbefinden",
+      "helpText": "Bitte beantworten Sie, in wie weit die folgenden Aussagen zu Ihrem körperlichen Wohlbefinden heute für Sie zutreffend waren.",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "containerPSS",
+      "displayPeriodDays": 7,
+      "displayDayOne": true,
+      "datatype": "Container",
+      "label": "Stresslevel",
+      "helpText": "Einmal alle sieben Tage bitten wir Sie um die Beantwortung der nachfolgenden Fragen zur Einschätzung Ihres derzeitigen Stresslevels.",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "containerBIA",
+      "datatype": "Container",
+      "label": "Bioimpedanzanalyse",
+      "helpText": "Hier sehen Sie die Ergebnisse Ihrer ersten Bio-Impedanzanalyse (falls eingetragen). Diese Werte dienen nur zu Ihrer Information und können nur vom studiendurchführenden Personal eingetragen werden.",
+      "permissions": [
+        {
+          "role": "all",
+          "type": "Read"
+        }
+      ]
+    },
+    {
+      "id": "bia_measurements",
+      "label": "Bioimpedanz-Messungen (BIA)",
+      "datatype": "ListType",
+      "elements_type": "ADT",
+      "adt_enum_id": "bia_measurement",
+      "maybeNull": true,
+      "permissions": [
+        {
+          "role": "Participant",
+          "type": "Read"
+        },
+        {
+          "role": "Supervisor",
+          "type": "Read"
+        },
+        {
+          "role": "Nurse",
+          "type": "Edit"
+        }
+      ]
+    }
+  ]
+}

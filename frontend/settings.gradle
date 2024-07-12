@@ -1,0 +1,3 @@
+include ':app'
+include ':garmin-health-sdk'
+rootProject.name = "food4future Study Companion"

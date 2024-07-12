@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="release_notes_version_index">
+        <!-- The index of an entry in this array refers to the index of the "release_notes"-array
+        for the corresponding build version -->
+            <item>27</item>
+            <item>29</item>
+            <item>30</item>
+            <item>31</item>
+            <item>32</item>
+            <item>34</item>
+            <item>36</item>
+            <item>37</item>
+            <item>38</item>
+            <item>39</item>
+            <item>40</item>
+            <item>41</item>
+            <item>42</item>
+
+    </integer-array>
+
+    <string-array name="release_notes">
+
+        <!-- v27 -->
+        <item>Release notes will be introduced with v29.</item>
+
+        <!-- v29 -->
+        <item>
+Fixes:\n
+\n
+* Showing this release notes after app was updated\n\
+\n
+* Sending error reports after unexpected app crashes, which helps TH Wildau tracing the causes of such crashes\n
+\n
+Fixes:\n
+\n
+* Plus-Button for adding new meals was cut off at large system fonts\n
+\n
+* Question Log: day status was cut off in the table making it unreadable at large system fonts\n
+\n
+* Possible app crash when too many locally stored sensor data:\n
+  Stored sensor had not been completely deleted from smartphone after they have been transmitted to the server\n
+\n
+* Daily questions and participant profile:\n
+  All current input was lost after rotating the device screen
+        </item>
+
+        <!-- v30 -->
+        <item>
+Improvements:\n
+\n
+* Compatibility with new cosinuss° One firmware\n
+        </item>
+
+        <!-- v31 -->
+        <item>
+This update ensures compatibility with the new series of cosinuss° One devices, which have been equipped with a new firmware version by the manufacturer. \n
+\n
+Fixes:\n
+\n
+* Signal quality showed permanently 6% on devices with new cosinuss° One firmware \n
+\n
+Improvements:\n
+\n
+* Adjusted tolerances for signal quality \n
+* now displaying as word instead of percentage \n
+* We now transfer the information whether a cosinuss° One with new or with old firmware is used, since this difference is relevant for the data evaluation
+        </item>
+
+        <!-- v32 -->
+        <item>
+Fixes:\n
+\n
+* A manually triggered data synchronization with f4f server (only possible if Wi-Fi was unavailable for too long time) is now running in background and no longer blocking the user interface. \n
+* App crash on back press and confirm discard changes in Participant Profile \n
+\n
+Improvements:\n
+\n
+*  The status of a manually triggered synchronization is now integrated in the status screen and no longer displayed by an overlay progress dialog. \n
+        </item>
+
+        <!-- v34 -->
+        <item>
+Fixes:\n
+\n
+* The number of data sets transferred during a synchronization process has been limited to prevent memory overflows, which would result in a complete inability to transfer study data if there was no available Wi-Fi connection for an extended period within the study runtime. \n
+* Update of the local database system. \n
+\n
+Improvements:\n
+\n
+*  None \n
+        </item>
+
+        <!-- v36 -->
+        <item>
+Changes/Improvements:\n
+\n
+* Migrated to new Garmin Health SDK v3.5.4 \n
+* enabled compatibility with new server API version \n
+* support user-specific schemas and structures \n
+* allow server selection at login \n
+* determine server endpoint from Login QR code \n
+* support absence of daily questions \n
+* added ability to remotely select which sensors are used in the participant\'s study \n
+* fixed compatibility with Android 13 (notifications were not shown) \n
+* data schema: added support for food IDs \n
+\n
+        </item>
+
+
+        <!-- v37 -->
+        <item>
+Fixes:\n
+\n
+* Auto-selected Test server when opening Settings view before first login in release build. \n
+* Garmin Sync Notification hangs when unpairing device during ongoine sync process. \n
+\n
+        </item>
+
+        <!-- v38 -->
+        <item>
+Fixes:\n
+\n
+*  app hangs in permission dialog loop on Android versions 12 and less \n
+\n
+        </item>
+
+
+        <!-- v39 -->
+        <item>
+Fixes:\n
+\n
+*  broken layout of image license information \n
+*  crash when app is launched in background \n
+*  nudging notifications displayed at the wrong time on some Android versions \n
+*  sometimes "null" is displayed instead of the food label \n
+*  fixed format of data value for custom amounts \n
+*  daily questions marked as "answered" also when unanswered if question form consists only of optional fields \n
+*  added "Edit Answers" button to status screen \n
+*  current day in study period is displayed also for users with a non-participant role \n
+\n
+Improvements: \n
+*  re-implemented dynamic generation of the entries in the food consumption list (consumption summary)  \n
+*  support separate food labels in tile and consumption summary \n
+*  allow to open barcode scanner within the food selection hierarchy (and not only if it is the last item) \n
+*  these release notes can now be displayed via context menu \n
+\n
+        </item>
+
+        <!-- v40 -->
+        <item>
+Fixes:\n
+\n
+* multiple user data sets for same day were created, if first food item was entered before answering the questions \n
+* user was not asked to answer today\'s question in Question Log \n
+            \n
+        </item>
+
+        <!-- v41 -->
+        <item>
+Fixes:\n
+\n
+* App crash on login attempt if server responds with error status. \n
+\n
+        </item>
+
+        <!-- v42 -->
+        <item>
+Improvements:\n
+\n
+* Added support for boolean question form fields (Checkboxes). \n
+\n
+        </item>
+
+
+
+    </string-array>
+
+
+</resources>

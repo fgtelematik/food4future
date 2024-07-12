@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.dev.DevFragment"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cpb_progress="40"
+            app:cpb_background_progressbar_color="@color/colorPrimaryBright"
+            app:cpb_background_progressbar_width="20dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="@color/colorPrimaryDark"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_round_border="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Study day\n4/20"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnShowListEditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show List Editor"
+        android:layout_marginVertical="10dp"/>
+    <Button
+        android:id="@+id/btnShowCosinussReminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Cosinuss Reminder"
+        android:layout_marginVertical="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-- AUTO UPDATER TESTS --"
+        android:layout_marginVertical="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textUpdateInstallableState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Update Installable State)"
+        android:layout_marginVertical="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textUpdateDownloadState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Update Download State)"
+        android:layout_marginVertical="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnDownloadUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Try Download Update"
+        android:layout_marginVertical="10dp"/>
+
+    <Button
+        android:id="@+id/btnInstallUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Install Update"
+        android:layout_marginVertical="10dp"/>
+
+
+</LinearLayout>

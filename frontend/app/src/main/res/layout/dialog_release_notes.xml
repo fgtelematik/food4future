@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false">
+
+        <TextView
+            android:id="@+id/text_release_notes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Improvements:\n
+\n
+* Showing this release notes after app was updated\n\
+\n
+* Sending error reports after unexpected app crashes, which help TH Wildau tracing the causes of such crashes\n
+\n
+Fixes:\n
+\n
+* Plus-Button for adding new meals was cut off at large system fonts\n
+\n
+* Question Log: day status was cut off in the table making it unreadable at large system fonts\n
+\n
+* Possible app crash when too many locally stored sensor data:\n
+  Stored sensor had not been completely deleted from smartphone after they have been transmitted to the server\n
+\n
+* Daily questions and participant profile:\n
+  All current input was lost after rotating the device screen"
+            android:typeface="monospace"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/check_hide_release_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/release_notes_checkbox_hide"
+        />
+
+
+</LinearLayout>

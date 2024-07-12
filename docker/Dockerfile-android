@@ -1,0 +1,51 @@
+# Use an official Android base image with OpenJDK 17 (v17 is required minimum for the selected SDK version and -bullseye is required for apt-get)
+FROM openjdk:17-jdk-bullseye
+
+# Set environment variables
+ENV ANDROID_SDK_ROOT=/opt/android-sdk
+ENV ANDROID_HOME=${ANDROID_SDK_ROOT}
+ENV PATH=${PATH}:${ANDROID_HOME}/cmdline-tools/latest/bin:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/tools
+
+# Install required dependencies
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        unzip \
+        wget \
+        git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Download and install Android SDK
+RUN mkdir -p ${ANDROID_SDK_ROOT} \
+    && cd ${ANDROID_SDK_ROOT} \
+    && wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -O cmdline-tools.zip \
+    && unzip cmdline-tools.zip -d ${ANDROID_HOME} \
+    && rm cmdline-tools.zip \
+    && mkdir -p /tmp/latest/ \
+    && mv ${ANDROID_HOME}/cmdline-tools/* /tmp/latest/ \
+    && mv /tmp/latest ${ANDROID_HOME}/cmdline-tools/
+
+# Accept Android SDK licenses
+RUN yes | sdkmanager --licenses
+
+# Set up environment variables for build
+ENV GRADLE_USER_HOME /root/.gradle
+
+# Set up workspace
+WORKDIR /app
+
+# Copy the Android application source code to the container
+COPY ./frontend/ ./
+
+# Copy and run the gradle proxy server configuration script
+COPY ./docker/configure-proxy-for-gradle.sh ./
+RUN ./configure-proxy-for-gradle.sh
+
+# Build the Android application
+RUN chmod +x gradlew && ./gradlew clean assembleDebug && mkdir -p /dist
+
+# Copy the built APK to the dist folder
+ENTRYPOINT ["cp", "-a", "/app/app/build/outputs/apk/debug/app-debug.apk", "/dist/f4fstudycompanion.apk"]
+
+# Provide the built APK at the mount point /dist
+VOLUME /dist
+

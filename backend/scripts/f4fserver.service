@@ -1,0 +1,15 @@
+[Unit]
+Description=f4f Backend Server
+#After=mongod.service  # No longer required for dockerized MongoDB
+#Requires=mongod.service nginx.service
+Requires=nginx.service
+
+[Service]
+User=f4f
+Group=f4f
+ExecStart={app_dir}/scripts/run.sh
+PIDFile={app_dir}/f4fserver.pid
+
+[Install]
+WantedBy=multi-user.target
+

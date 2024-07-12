@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/valDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Creation Date"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <!--android:text="When was this entry created."-->
+            <TextView
+                android:id="@+id/valDateHelper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Die Uhrzeit, zu der Sie üblicherweise in der Woche aufstehen."
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/valDateValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="12.04.2020"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginRight="16dp"
+                />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/valDateBtnEditDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/ic_baseline_calendar_24"
+            android:text="@string/button_create" />
+
+        <ImageButton
+            android:id="@+id/valDateBtnEditTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/ic_baseline_time_24"
+            android:text="@string/button_create" />
+
+        <ImageButton
+            android:id="@+id/valDateBtnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:text="@string/button_create" />
+
+    </LinearLayout>
+
+</LinearLayout>

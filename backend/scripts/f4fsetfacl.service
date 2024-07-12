@@ -1,0 +1,10 @@
+[Unit]
+Description=f4f Developer set ACL permission for f4f-dev 
+
+[Service]
+Type=oneshot
+ExecStart=setfacl -R -m u:f4f-dev:rwx {app_dir}
+
+[Install]
+WantedBy=multi-user.target
+

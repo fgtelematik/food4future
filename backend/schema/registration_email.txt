@@ -1,0 +1,27 @@
+#if $name==None#Guten Tag,#else#Hallo $name,#end if#
+
+vielen Dank für Ihre Teilnahme an unserer Studie OPTIMIST! 
+
+Mit dieser E-Mail erhalten Sie Ihren persönlichen Zugang zur Studienteilnahme über Ihre food4future App. 
+
+Scannen Sie den beigefügten QR-Code mit der Kamera Ihres Smartphones, um die f4f StudyCompanion App herunterzuladen. Alternativ können Sie auch folgenden Link auf Ihrem Smartphone aufrufen:
+$apk_url
+
+Wichtig: Damit die Installation der heruntergeladenen App funktioniert, müssen Sie ggf. Ihrem Browser (z.B. Chrome) die Berechtigung erteilen, Apps installieren zu dürfen, wenn Sie danach gefragt werden.
+
+Bitte öffnen Sie die App und tippen auf "Mit f4f Service verbinden", dann auf das QR-Code-Symbol und scannen dann darüber erneut den angehängten QR-Code.
+
+Sollte dies nicht funktionieren, können Sie sich auch über den gleichen Weg mit den folgenden Zugangsdaten in der App anmelden:
+
+    Benutzername: $username
+    Passwort: #if $password==None#(wie von Ihnen bei der Aufnahme festgelegt)#else#$password#end if#
+
+#if $password==None
+Sollte die Anmeldung via QR-Code nicht funktionieren und Ihnen das bei der Anmeldung vergebene Passwort nicht mehr bekannt sein, bitten wir Sie, uns zu kontaktieren.
+
+#end if
+
+Bei weiteren Fragen, wenden Sie sich bitte an Ihre Vertrauensstelle.
+
+Vielen Dank.
+Ihr food4future-Team.

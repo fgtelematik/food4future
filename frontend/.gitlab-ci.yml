@@ -1,0 +1,49 @@
+variables:
+  GRADLE_PROXY_CONFIG: -Dhttp.proxyHost=http://proxy.th-wildau.de -Dhttp.proxyPort=8080 -Dhttps.proxyHost=http://proxy.th-wildau.de -Dhttps.proxyPort=8080 "-Dhttp.nonProxyHosts=localhost|127.0.0.1|localaddress|*.localdomain.com"
+
+default:
+  image: androidsdk/android-29
+  before_script:
+    - export HTTP_PROXY=http://proxy.th-wildau.de:8080
+    - export HTTPS_PROXY=http://proxy.th-wildau.de:8080
+    - export FTP_PROXY=http://proxy.th-wildau.de:8080
+    - export NO_PROXY="localhost,127.0.0.1,localaddress,.localdomain.com"
+    - export http_proxy=http://proxy.th-wildau.de:8080
+    - export https_proxy=http://proxy.th-wildau.de:8080
+    - export ftp_proxy=http://proxy.th-wildau.de:8080
+    - export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+    - chmod +x ./gradlew
+
+# Basic android and gradle stuff
+# Check linting
+lintDebug:
+  interruptible: true
+  stage: build
+  script:
+    - ./gradlew $GRADLE_PROXY_CONFIG -Pci --console=plain :app:lintDebug -PbuildDir=lint
+  rules:
+    - when: manual
+
+# Make Project
+assembleDebug:
+  interruptible: true
+  stage: build
+  script:
+    - ./gradlew $GRADLE_PROXY_CONFIG assembleDebug
+  artifacts:
+    paths:
+      - app/build/outputs/
+  rules:
+    - when: manual
+
+# Run all tests, if any fails, interrupt the pipeline(fail it)
+debugTests:
+  #interruptible: true
+  stage: test
+  script:
+    #- ./gradlew -Pci --console=plain :app:testDebug
+    - echo "Test if Android Debug APK was built successfully"
+    - test -f "app/build/outputs/apk/debug/app-debug.apk"
+  rules:
+    - when: manual
+

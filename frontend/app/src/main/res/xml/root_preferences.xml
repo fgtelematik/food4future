@@ -1,0 +1,78 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="f4f Connect">
+
+    <ListPreference
+        app:entries="@array/server_preset_labels"
+        app:entryValues="@array/server_preset_values"
+        app:key="backend_server"
+        app:title="@string/setting_backend_server"
+        app:useSimpleSummaryProvider="true" />
+
+    <EditTextPreference
+        app:key="backend_custom_server"
+        app:title="@string/setting_backend_server_custom_url"
+        app:useSimpleSummaryProvider="true" />
+
+    <Preference
+        app:key="backend_server_url_view"
+        app:title="@string/setting_backend_server_url"
+        android:enabled="false"
+        >
+    </Preference>
+
+
+    <Preference
+        app:key="logout"
+        app:title="@string/setting_disconnect">
+    </Preference>
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/setting_title_sensor">
+
+    <!--<Preference
+        app:key="activity"
+        app:title="@string/setting_sensor_open">
+        <intent
+            android:targetPackage="de.thwildau.f4f.studycompanion"
+            android:targetClass="de.thwildau.f4f.studycompanion.ui.login.LoginActivity"/>
+
+    </Preference>-->
+
+    <Preference
+        app:key="sensor_firmware_update"
+        app:title="@string/setting_sensor_firmware_udpate">
+    </Preference>
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/app_info_version">
+        <Preference
+            android:key="app_version_string"
+            app:title="{BuildConfig.VERSION_NAME}"
+            android:enabled="false" />
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory app:title="@string/sync_header">
+
+
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

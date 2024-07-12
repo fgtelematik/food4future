@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>f4f StudyCompanion Backend</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+
+      #root {
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      h3 {
+      margin-top: 0;
+      margin-bottom: 5px;
+      color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #666;
+        margin: 0px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .items-list {
+        max-height: 100%;
+        overflow:auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .preview-image {
+    width: 75px;
+    height: 50px;
+}
+
+
+    .entry-top {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin:0 5px 2px 0px;
+        }
+
+     .entry-container {
+            display: flex;
+            flex-direction: column;
+            align-items: top;
+        }
+
+        .entry-column {
+            padding: 5px;
+        }
+
+        .entry-column1 {
+            flex: 0 0 75px; /* Set the width of column 1 */
+        }
+
+        .entry-column2 {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+<div id="root">
+    <div class="items-list">
+        #for $fi in $food_images
+        <div class="entry-container">
+            <div class="entry-top">
+                <div class="entry-column entry-column1">
+                    <img src="$image_base_url$fi.filename" alt="$fi.label" class="preview-image"/>
+                </div>
+                <div class="entry-column entry-column2">
+                    <h3>$fi.label</h3>
+                    #if $fi.sourceInfo#<p>from <b>$fi.sourceInfo</b></p>#end if#
+
+
+                </div>
+            </div>
+            #if $fi.sourceUrl#
+            <p>
+                <b>Source:</b> <a href="$fi.sourceUrl" target="_blank"
+                           rel="noreferrer">$fi.sourceUrl</a>
+            </p>
+            #end if#
+
+            <p>
+                #if $fi.licenseName#<b>License:</b> $fi.licenseName#end if#
+                #if $fi.licenseUrl# (<a href="$fi.licenseUrl" target="_blank"
+                                        rel="noreferrer">$fi.licenseUrl</a>)#end if#
+            </p>
+        </div>
+        #end for
+    </div>
+</div>
+</body>
+</html>

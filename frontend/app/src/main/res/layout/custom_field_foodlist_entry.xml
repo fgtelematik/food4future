@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:id="@+id/valFoodEntryView"
+    android:paddingHorizontal="10dp"
+    >
+
+    <TextView
+        android:id="@+id/valFoodEntryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="start|center_vertical"
+        android:textStyle="bold"
+        android:text="3 x Apple (rough)"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/valFoodEntryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textStyle="bold"
+        android:text="14:32"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:textSize="15sp" />
+
+
+    <ImageButton
+        android:id="@+id/valFoodBtnRemove"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_gravity="end|center_vertical"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorRed"
+        android:src="@drawable/ic_baseline_remove_24"
+        android:tint="@color/mdtp_white"
+        android:text="-" />
+
+</LinearLayout>

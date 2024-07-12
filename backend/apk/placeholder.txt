@@ -1,0 +1,5 @@
+This file is a placeholder for the Android App binary.
+Please add the binary to this directory and change the 'apk_file' setting
+in the config.json to the filename of the apk file name, which should be included 
+in the APK download links.
+Only specify the file name without path.

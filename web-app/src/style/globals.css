@@ -1,0 +1,99 @@
+﻿/*
+ * f4f Study Management Portal (Web App)
+ *
+ * Copyright (c) 2024 Technical University of Applied Sciences Wildau
+ * Author: Philipp Wagner, Research Group Telematics
+ * Contact: fgtelematik@th-wildau.de
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation version 2.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+
+p a, p a:visited {
+    color: #58afcc;
+}
+
+p a:hover,
+p a:active {
+    color: #AAD8D3;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.additional-info {
+    color: grey;
+}
+
+.no-word-wrap {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.simple-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.items-list {
+    max-height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.items-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.entry-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 5px 2px 5px;
+}
+
+.entry-container:hover {
+    background-color: #f1f1f1;
+}
+
+.entry-column {
+    padding: 10px;
+}
+
+.entry-column1 {
+    flex: 0 0 200px; /* Define a fixed width for column 1 */
+}
+
+.entry-column2 {
+    flex: 1; /* Allow column 2 to grow and fill the remaining space */
+}
+
+.entry-column3 {
+    flex: 0 0 50px; /* Define a fixed width for column 3 */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="license_info_entries">
+        <item>@string/action_oss_license_info</item>
+        <item>@string/action_garmin_license_info</item>
+        <item>@string/action_image_license_info</item>
+    </string-array>
+</resources>

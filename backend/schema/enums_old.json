@@ -1,0 +1,236 @@
+{ 
+	"enums" : 
+		[
+			{
+				"id": "gender",
+				"element_ids": [ "m", "f", "o" ],
+				"element_labels": [ "männlich", "weiblich", "divers" ]
+			},
+			{
+				"id": "left_right",
+				"element_ids": [ "left", "right"],
+				"element_labels": [ "links", "rechts"]
+			},
+			{
+				"id": "role",
+				"element_ids": [ "Administrator", "Supervisor", "Nurse", "Participant" ],
+				"element_labels": [  "Administrator", "Supervisor", "Nurse", "Participant" ]
+			},
+			{
+				"id": "SensorDataType",
+				"element_ids": [ "Energy", "Pulse", "Temperature", "PulseOx", "HRV", "HR", "Acceleration"],
+				"element_labels": ["Energy", "Pulse", "Temperature", "PulseOx", "HRV", "HR", "Acceleration"]
+			},
+			{
+				"id": "side",
+				"element_ids": [ "left", "right"],
+				"element_labels": ["Left", "Right"]
+			},
+			{
+				"id": "ConsultationType",
+				"element_ids": ["anamnesis", "intermediate", "final", "other"],
+				"element_labels": ["Aufnahme", "Zwischenuntersuchung", "Abschlussuntersuchung", "Sonstige"]
+			},
+			{
+				"id": "FoodType",
+				"label": "Nahrungsmitteltyp",
+				"helpText": "Welcher der folgenden Gruppen lässt sich die Mahlzeit zuordnen?",
+				"element_ids": ["vegetable", "fruit", "juice", "tomatoproduct", "supplement"],
+				"element_labels":["Gemüse", "Obst", "Saft", "Tomaten/\n-erzeugnis", "Nahrungsergänzungsmittel"],
+				"element_image_urls" : [ "images/conv/02vegetables.jpg", "images/conv/01fruits2.jpg", "images/conv/03juice.jpg", "images/conv/04convenience.jpg", "images/conv/05supplement.jpg" ]
+			},
+			{
+				"id": "VegetableType",
+				"label": "Art des Gemüses",
+				"helpText": "Welches Gemüse haben Sie gegessen?",
+				"element_ids": ["tomato", "paprika", "chili", "red_cabbage","pumpkin", "carrot", "sweetpotato", "corn", "beans_peas", "zucchini", "cucumber", "broccoli", "salad_specific", "spinach", "curlykale", "collards"],
+				"element_labels":["Tomate", "Paprika", "Chilischoten", "Rotkohl", "Kürbis", "Karotte", "Süßkartoffel", "Mais", "Erbsen/ Bohnen", "Zucchini", "Gurke", "Brokkoli", "Salat", "Spinat", "Grünkohl", "Blattkohl"],
+				"element_image_urls" : [ "images/conv/tomato.jpg", "images/conv/paprika.jpg", "images/conv/peperoni.jpg", "images/conv/40red_cabbage.jpg", "images/conv/07pumpkin.jpg",  "images/conv/06carrot.jpg", "images/conv/26sweetpotato.jpg", "images/conv/08corn.jpg", "images/conv/41beans_and_peas.jpg", "images/conv/70zucchini.jpg",  "images/conv/24cucumber.jpg", "images/conv/25broccoli.jpg", "images/conv/09salad.jpg", "images/conv/spinach.jpg", "images/conv/11curlykale.jpg", "images/conv/35collards2.jpg"],
+				"contains_food_items": true
+			},
+			{
+				"id": "VegetableState",
+				"label": "Zubereitungsart",
+				"helpText": "Bitte spezifizieren Sie die Zubereitungsart des Gemüses",
+				"element_ids": ["raw", "cooked", "conserved"],
+				"element_labels":["roh", "gekocht/\ngegart", "konserviert"],
+				"element_image_urls" : [ "images/conv/13raw.jpg", "images/conv/12cooked.jpg", "images/conv/22fermented.jpg" ]
+			},
+			{
+				"id": "FruitState",
+				"label": "Zubereitungsart",
+				"helpText": "Bitte spezifizieren Sie die Zubereitungsart des Obstes",
+				"element_ids": ["fruit_raw", "fruit_dried", "fruit_conserved"],
+				"element_labels":["roh", "getrocknet", "konserviert"],
+				"element_image_urls" : [ "images/conv/54fruits_raw2.jpg", "images/conv/55fruits_dried.jpg", "images/conv/56fruits_conserved.jpg" ]
+			},
+			{
+				"id": "FruitType",
+				"label": "Art des Obstes",
+				"helpText": "Welches Obst haben Sie gegessen?",
+				"element_ids": ["citrus", "mango", "apricot", "kaki", "sea_buckthorn", "nectarine_peach", "cantaloupe", "watermelon", "papaya", "maracuja", "sour_cherry"],
+				"element_labels":["Zitrusfrucht", "Mango", "Aprikose", "Kaki/Sharonfrucht", "Sanddorn", "Nektarine/Pfirsich", "Cantaloupe-Melone", "Wassermelone", "Papaya", "Maracuja/Passionsfrucht", "Sauerkirschen"],
+				"element_image_urls" : [ "images/conv/14citrus.jpg", "images/conv/28mango.jpg", "images/conv/29apricot.jpg", "images/conv/49kaki.jpg", "images/conv/62sea-buckthorn.jpg", "images/conv/53nectarine_peach.jpg", "images/conv/58cantaloupe.jpg", "images/conv/15watermelon.jpg", "images/conv/16papaya.jpg", "images/conv/57maracuja.jpg", "images/conv/42sour_cherry.jpg"],
+				"contains_food_items": true
+			},
+			{
+				"id": "CitrusType",
+				"label": "Art der Zitrusfrucht",
+				"helpText": "Welche Art Zitrusfrucht haben Sie gegessen?",
+				"element_ids": ["orange", "mandarin", "blood_orange", "grapefruit"],
+				"element_labels":["Orange", "Mandarine", "Blutorange", "Grapefruit"],
+				"element_image_urls" : [ "images/conv/45orange.jpg", "images/conv/46mandarin.jpg", "images/conv/47bloodorange.jpg", "images/conv/48grapefruit.jpg"],
+				"contains_food_items": true
+			},
+			{
+				"id": "SaladType",
+				"label": "Art des Salats",
+				"helpText": "Welchen Salat haben Sie gegessen?",
+				"element_ids": ["butterhead","endive","romaine","field","iceberg","rucola","lollo_rosso"],
+				"element_labels":["Kopfsalat","Endiviensalat","Römersalat","Feldsalat","Eisbergsalat","Rucola","Lollo Rosso"],
+				"element_image_urls" : [ "images/conv/65salad_butterhead.jpg","images/conv/66salad_endive.jpg","images/conv/67salad_romaine.jpg","images/conv/68salad_field.jpg","images/conv/69salad_iceberg.jpg","images/conv/27rucola.jpg","images/conv/64salad_lollo_rosso.jpg"],
+				"contains_food_items": true
+			},
+			{
+				"id": "PaprikaColor",
+				"label": "Farbe der Paprika",
+				"helpText": "Bitte geben Sie die Farbe der Paprika an.",
+				"element_ids": ["paprika_red", "paprika_yellow", "paprika_green"],
+				"element_labels":["Rot", "Gelb", "Grün"],
+				"element_image_urls" : [ "images/conv/37paprika_red.jpg", "images/conv/38paprika_yellow.jpg", "images/conv/39paprika_green.jpg"],
+				"contains_food_items": true
+			},
+			{
+				"id": "JuiceType",
+				"label": "Saftart",
+				"helpText": "Was für eine Art Saft haben Sie getrunken?",
+				"element_ids": ["orange_juice", "sea_buckthorn_juice", "carrot_juice", "vegetable_juice", "multivitamin_juice", "sour_cherry_juice", "blood_orange_juice"],
+				"element_labels":["Orangensaft", "Sanddornsaft", "Karottensaft", "Tomatensaft" , "Multivitaminsaft", "Sauerkirsch-/Acerolasaft", "Blutorangensaft"],
+				"element_image_urls" : [ "images/conv/17fruitjuice.jpg", "images/conv/63sea-buckthorn-juice.jpg", "images/conv/32carrotjuice.jpg", "images/conv/31tomatojuice.jpg", "images/conv/52multivitamin.jpg", "images/conv/50cherryjuice.jpg", "images/conv/51bloodorangejuice.jpg"] ,
+				"contains_food_items": true
+			},
+			{
+				"id": "TomatoProductType",
+				"label": "Art des Tomatenerzeugnisses",
+				"helpText": "Bitte spezifizieren Sie die Art des tomatenhaltigen Nahrungsmittels.",
+				"element_ids": ["tomato_raw", "tomato_cooked", "tomato_dried", "soup", "sieved", "paste", "ketchup", "pizza", "pasta"],
+				"element_labels":["roh", "gekocht/ \ngegart", "getrocknet", "Suppe", "passierte \nTomaten", "Tomatenmark", "Ketchup", "Pizza", "Pasta"],
+				"element_image_urls" : [ "images/conv/tomato.jpg", "images/conv/34cookedtomatoe.jpg", "images/conv/33drytomatoe.jpg", "images/conv/60tomato_soup.jpg", "images/conv/21sieved.jpg", "images/conv/59tomato_paste.jpg", "images/conv/23ketchup.jpg", "images/conv/20pizza.jpg", "images/conv/61pasta.jpg"],
+				"contains_food_items": true
+			},
+			{
+				"id": "SupplementType",
+				"label": "Nahrungsergänzungsmittel",
+				"helpText": "Wie möchten Sie die Art des Nahrungsergänzungemittels angeben?",
+				"element_ids": ["barcode", "others$label"],
+				"element_labels":["Barcode scannen", "Produktnamen eingeben"],
+				"element_image_urls" : [null, null],
+				"contains_food_items": true
+			},
+			{
+				"id": "AmountVariable",
+				"label": "Art der Mengenangabe",
+				"helpText": "Wir würden gerne wissen, wie viel Sie von dem angegebenen Lebensmittel zu sich genommen haben.\nWie möchten Sie die Menge angeben?",
+				"element_ids": [ "gramms", "pieces"],
+				"element_labels": ["in Gewicht", "in Stückzahl"]
+			},
+			{
+				"id": "AmountPieces",
+				"label": "Stückzahl",
+				"helpText": "Wie viel Stück haben Sie gegessen?",
+				"element_ids": [ "0.25", "0.5", "1", "2", "3", "4", "5", "others$pieces"],
+				"element_labels": ["1/4", "1/2", "1", "2", "3", "4", "5", "Manuell\neingeben"]
+			},
+			{
+				"id": "AmountGramms",
+				"label": "Menge",
+				"helpText": "Welche Menge des ausgewählten Lebensmittels haben Sie gegessen?",
+				"element_ids": [ "50 g", "100 g", "150 g", "200 g", "300 g", "500 g", "others$weight"],
+				"element_labels": ["50 g", "100 g", "150 g", "200 g", "300 g", "500 g", "Manuell\neingeben"]
+			},
+			{
+				"id": "AmountLiquid",
+				"label": "Flüssigkeitsmenge",
+				"helpText": "Wie viel des ausgewählten Lebensmittels haben Sie getrunken?",
+				"element_ids": [ "100 ml", "150 ml", "250 ml", "330 ml",  "500 ml", "750 ml", "1000 ml", "others$milliliters"],
+				"element_labels": ["100 ml", "150 ml", "250 ml", "330 ml",  "500 ml", "750 ml", "1 L", "Manuell\neingeben"]
+			}		
+		],
+	"enum_transitions":
+		{
+			"FoodType" : 
+				{
+					"vegetable" : "VegetableType",
+					"fruit" : "FruitType",
+					"juice" : "JuiceType",
+					"tomatoproduct" : "TomatoProductType",
+					"supplement" : "SupplementType"
+				},
+			"SupplementType" : 
+				{
+					"barcode" : "Barcode",
+					"others$label" : "AmountVariable"
+				},
+			"VegetableType" : 
+				{
+					"*" : "VegetableState",
+					"pumpkin" : "VegetableState+UseWeight",
+					"corn" : "VegetableState+UseWeight",
+					"salad_specific" : "SaladType",
+					"spinach" : "VegetableState+UseWeight",
+					"curlykale" : "VegetableState+UseWeight",
+					"collards" : "VegetableState+UseWeight",
+					"beans_peas" : "VegetableState+UseWeight",
+					"red_cabbage" : "VegetableState+UseWeight",
+					"paprika" : "PaprikaColor"
+				},
+			"SaladType" : 
+				{
+					"*" : "AmountGramms"			
+				},
+			"PaprikaColor" : 
+				{
+					"*" : "VegetableState"			
+				},
+			"VegetableState" : 
+				{
+					"*" : "AmountVariable",
+					"*+UseWeight" : "AmountGramms"					
+				},
+			"FruitState" : 
+				{
+					"*" : "AmountVariable"				
+				},
+			"FruitType" : 
+				{
+					"*" : "FruitState",
+					"citrus": "CitrusType"
+				},
+			"CitrusType" : 
+				{
+					"*" : "FruitState"
+				},
+			"JuiceType" : 
+				{
+					"*" : "AmountLiquid"
+				},
+			"TomatoProductType" : 
+				{
+					"*" : "AmountVariable",
+					"sieved" : "AmountGramms",
+					"pasta" : "AmountGramms",
+					"soup" : "AmountLiquid",
+					"ketchup" : null,
+					"paste" : null
+				},
+			"Barcode" : 
+				{
+					"*" : "AmountVariable"
+				},
+			"AmountVariable":
+				{
+					"gramms" : "AmountGramms",
+					"pieces" : "AmountPieces"
+				}
+		}
+}

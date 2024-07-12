@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="JS/TS Project" pattern="(file:*.ts*||file:*.js||file:*.jsx||file:*.css||file:*.scss||file:*.html)&amp;&amp;!file:dist//*&amp;&amp;!file:node_modules//*&amp;&amp;!file:public//*&amp;&amp;!file:.run/*" />
+</component>

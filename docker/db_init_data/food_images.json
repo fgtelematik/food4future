@@ -1,0 +1,538 @@
+[
+  {
+    "filename": "preset/02vegetables.jpg",
+    "label": "Vegetables",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Enginy Akyurt",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/flachbildfotografie-von-gemusesorten-1435904/"
+  },
+  {
+    "filename": "preset/01fruits2.jpg",
+    "label": "Fruit",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Jane Doan",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/verschiedene-geschnittene-fruchte-1128678/"
+  },
+  {
+    "filename": "preset/03juice.jpg",
+    "label": "Juice",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Susanne Jutzeler, suju-foto",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/drei-verschiedene-fruchtsafte-in-glasern-1233319/"
+  },
+  {
+    "filename": "preset/04convenience.jpg",
+    "label": "Tomato Product",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Katerina Holmes",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/pizza-auf-braunem-holztisch-5908255/"
+  },
+  {
+    "filename": "preset/05supplement.jpg",
+    "label": "Food supplement",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Polina Tankilevitch",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/person-frau-gesundheit-medizin-3873209/"
+  },
+  {
+    "filename": "preset/tomato.jpg",
+    "label": "Tomato",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Kaboompics.com",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/lebensmittel-tomate-gemuse-essen-5617/"
+  },
+  {
+    "filename": "preset/paprika.jpg",
+    "label": "Paprika",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Kai Pilger",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/verschiedene-paprika-594137/"
+  },
+  {
+    "filename": "preset/peperoni.jpg",
+    "label": "Chili peppers",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Shivam Patel",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/rot-heiss-frucht-frisch-4066828/"
+  },
+  {
+    "filename": "preset/40red_cabbage.jpg",
+    "label": "Red cabbage",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "sourceInfo": "flickr: Roland Tangalo",
+    "sourceUrl": "https://www.flickr.com/photos/35034347371@N01/2360086"
+  },
+  {
+    "filename": "preset/07pumpkin.jpg",
+    "label": "Pumpkin",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Monstera",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/orange-kurbisse-5634608/"
+  },
+  {
+    "filename": "preset/06carrot.jpg",
+    "label": "Carrot",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: mali maeder",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/orange-karotten-auf-dem-tisch-143133/"
+  },
+  {
+    "filename": "preset/26sweetpotato.jpg",
+    "label": "Sweet potato",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: ivabalk",
+    "sourceUrl": "https://pixabay.com/de/users/ivabalk-782511/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3937451"
+  },
+  {
+    "filename": "preset/08corn.jpg",
+    "label": "Sweet corn",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: NEOSiAM 2021",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/haufen-von-zuckermais-603030/"
+  },
+  {
+    "filename": "preset/41beans_and_peas.jpg",
+    "label": "Peas/ beans",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Kai Pilger",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/grunes-gemuse-in-der-weissen-schussel-1352199/"
+  },
+  {
+    "filename": "preset/70zucchini.jpg",
+    "label": "Zucchini",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "licenseName": "CC BY 2.0: Attribution 2.0 Generic",
+    "sourceInfo": "flickr: cristina.sanvito",
+    "sourceUrl": "https://www.flickr.com/photos/40385177@N07/5982144657/"
+  },
+  {
+    "filename": "preset/24cucumber.jpg",
+    "label": "Cucumber",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Matthias Zomer",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/haufen-gurken-3568039/"
+  },
+  {
+    "filename": "preset/25broccoli.jpg",
+    "label": "Broccoli",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: ExplorerBob",
+    "sourceUrl": "https://pixabay.com/de/users/explorerbob-3093227/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3264243\">ExplorerBob</a> auf <a href=\"https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3264243"
+  },
+  {
+    "filename": "preset/09salad.jpg",
+    "label": "Lettuce",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Kai Pilger",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/grunes-gemuse-in-der-weissen-schussel-1352199/"
+  },
+  {
+    "filename": "preset/spinach.jpg",
+    "label": "Spinach",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Eva Bronzini",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/nass-spinat-grune-blatter-wassertropfen-6824475/"
+  },
+  {
+    "filename": "preset/11curlykale.jpg",
+    "label": "Kale",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Pixabay",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/grune-pflanze-51372/"
+  },
+  {
+    "filename": "preset/35collards2.jpg",
+    "label": "Collard Greens",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: WikimediaImages",
+    "sourceUrl": "https://pixabay.com/de/users/wikimediaimages-1185597/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2202487"
+  },
+  {
+    "filename": "preset/13raw.jpg",
+    "label": "raw",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/foto-der-weiblichen-hand-die-eine-schussel-des-grunen-gemuses-halt-4117550/"
+  },
+  {
+    "filename": "preset/12cooked.jpg",
+    "label": "cooked/cooked",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: CookEat",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/eintopf-mit-fleisch-und-gemuse-in-weisse-keramikschale-gelegt-772518/"
+  },
+  {
+    "filename": "preset/22fermented.jpg",
+    "label": "preserved",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels",
+    "sourceUrl": null
+  },
+  {
+    "filename": "preset/54fruits_raw2.jpg",
+    "label": "raw",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: 1195798",
+    "sourceUrl": "https://pixabay.com/de/users/couleur-1195798/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1600023"
+  },
+  {
+    "filename": "preset/55fruits_dried.jpg",
+    "label": "dried",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: CSU-Extension",
+    "sourceUrl": "https://pixabay.com/de/photos/einmachgl%C3%A4ser-dehydriert-obst-2742757/"
+  },
+  {
+    "filename": "preset/56fruits_conserved.jpg",
+    "label": "preserved",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: jarmoluk",
+    "sourceUrl": "https://pixabay.com/de/photos/marmelade-obst-gl%C3%A4ser-konfit%C3%BCren-428094/"
+  },
+  {
+    "filename": "preset/14citrus.jpg",
+    "label": "Citrus Fruit",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Anna Tukhfatullina Food Photographer/Stylist",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/orangen-schneiden-2611810/"
+  },
+  {
+    "filename": "preset/28mango.jpg",
+    "label": "Mango",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Riki Risnandar",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/lebensmittel-gesund-gelb-frucht-4023132/"
+  },
+  {
+    "filename": "preset/29apricot.jpg",
+    "label": "Apricot",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Eric BVD",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/lebensmittel-gesund-natur-rot-4793640/"
+  },
+  {
+    "filename": "preset/49kaki.jpg",
+    "label": "Persimmon/Sharon fruit",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: jackmac34",
+    "sourceUrl": "https://pixabay.com/de/photos/obst-kaki-herbst-orange-1100023/"
+  },
+  {
+    "filename": "preset/62sea-buckthorn.jpg",
+    "label": "Sea Buckthorn",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: monika1607",
+    "sourceUrl": "https://pixabay.com/de/photos/sanddorn-obst-pflanze-beere-5738646/"
+  },
+  {
+    "filename": "preset/53nectarine_peach.jpg",
+    "label": "Nectarine/Peach",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: stevepb",
+    "sourceUrl": "https://pixabay.com/de/photos/pfirsich-obst-lebensmittel-scheiben-1074997/"
+  },
+  {
+    "filename": "preset/58cantaloupe.jpg",
+    "label": "Cantaloupe melon",
+    "licenseUrl": "https://www.ars.usda.gov/oc/images/copyright/",
+    "licenseName": "USDA Copyright Policy",
+    "sourceInfo": "Photo by Scott Bauer, USDA Agricultural Research Service.",
+    "sourceUrl": "https://www.ars.usda.gov/oc/images/photos/k7388-11/"
+  },
+  {
+    "filename": "preset/15watermelon.jpg",
+    "label": "Watermelon",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Any Lane",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/geschnittene-wassermelone-auf-weisser-keramikplatte-5946081/"
+  },
+  {
+    "filename": "preset/16papaya.jpg",
+    "label": "Papaya",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: alleksana",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/lebensmittel-teller-sommer-mahlzeit-4113833/"
+  },
+  {
+    "filename": "preset/57maracuja.jpg",
+    "label": "Passion fruit",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: MissSuki",
+    "sourceUrl": "https://pixabay.com/de/photos/maracuja-passionsfrucht-obst-3519303/"
+  },
+  {
+    "filename": "preset/42sour_cherry.jpg",
+    "label": "Sour cherries",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: congerdesign",
+    "sourceUrl": "https://pixabay.com/de/photos/kirschen-obst-sauerkirschen-t%C3%BCte-3522365/"
+  },
+  {
+    "filename": "preset/45orange.jpg",
+    "label": "Orange",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: 1195798",
+    "sourceUrl": "https://pixabay.com/de/photos/orangen-zitrusfr%C3%BCchte-fr%C3%BCchte-2100108/"
+  },
+  {
+    "filename": "preset/46mandarin.jpg",
+    "label": "Tangerine",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: NoName_13",
+    "sourceUrl": "https://pixabay.com/de/photos/mandarinen-zitruspflanze-obst-1721563/"
+  },
+  {
+    "filename": "preset/47bloodorange.jpg",
+    "label": "Blood Orange",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: Alexas_Fotos",
+    "sourceUrl": "https://pixabay.com/de/photos/blutorange-frucht-obst-3209727/"
+  },
+  {
+    "filename": "preset/48grapefruit.jpg",
+    "label": "Grapefruit",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: JonPauling",
+    "sourceUrl": "https://pixabay.com/de/photos/grapefruit-h%C3%A4lfte-fr%C3%BCchte-5892709/"
+  },
+  {
+    "filename": "preset/65salad_butterhead.jpg",
+    "label": "Lettuce",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: 422737",
+    "sourceUrl": "https://pixabay.com/de/photos/natur-pflanzen-salat-kopfsalat-940032/"
+  },
+  {
+    "filename": "preset/66salad_endive.jpg",
+    "label": "Endive lettuce",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "licenseName": "CC BY-SA 3.0: Attribution-ShareAlike 3.0 Unported",
+    "sourceInfo": "Frank C. Müller on Wikipedia.de, Modifications: Cropped and rescaled",
+    "sourceUrl": "https://de.m.wikipedia.org/wiki/Datei:Friseesalat1_fcm.jpg"
+  },
+  {
+    "filename": "preset/67salad_romaine.jpg",
+    "label": "Romaine lettuce",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "sourceInfo": "Fructibus on Wikipedia.de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cos_lettuce_2017_A2.jpg"
+  },
+  {
+    "filename": "preset/68salad_field.jpg",
+    "label": "Lamb's lettuce",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: ivabalk",
+    "sourceUrl": "https://pixabay.com/de/photos/salat-feldsalat-feld-rapunzel-3946916/"
+  },
+  {
+    "filename": "preset/69salad_iceberg.jpg",
+    "label": "Iceberg lettuce",
+    "licenseUrl": "http://www.gnu.org/licenses/gpl.html",
+    "licenseName": "GNU General Public License 3",
+    "sourceInfo": "de.wikipedia.org, Quelle: Rijk Zwaan BV, The Netherlands.",
+    "sourceUrl": "https://de.wikipedia.org/wiki/Eisbergsalat#/media/Datei:Iceberg1.jpg"
+  },
+  {
+    "filename": "preset/27rucola.jpg",
+    "label": "Rucola",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: ChrRei1985",
+    "sourceUrl": "https://pixabay.com/de/photos/rucola-pflanzen-salat-frisch-gr%C3%BCn-545381/"
+  },
+  {
+    "filename": "preset/64salad_lollo_rosso.jpg",
+    "label": "Lollo Rosso",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licenseName": "CC BY-SA 4.0: Attribution-ShareAlike 4.0 International",
+    "sourceInfo": "Frank C. Müller on Wikipedia.de, Modifications: Cropped and rescaled",
+    "sourceUrl": "https://de.wikipedia.org/wiki/Schnittsalat#/media/Datei:Salat_Lollo_Rosso_fcm.jpg"
+  },
+  {
+    "filename": "preset/37paprika_red.jpg",
+    "label": "Red peppers",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: OpenClipart-Vectors",
+    "sourceUrl": "https://pixabay.com/de/vectors/pfeffer-paprika-gem%C3%BCse-lebensmittel-154377/"
+  },
+  {
+    "filename": "preset/38paprika_yellow.jpg",
+    "label": "Yellow peppers",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: OpenClipart-Vectors",
+    "sourceUrl": "https://pixabay.com/de/vectors/pfeffer-paprika-gem%C3%BCse-lebensmittel-154377/"
+  },
+  {
+    "filename": "preset/39paprika_green.jpg",
+    "label": "Green peppers",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: OpenClipart-Vectors",
+    "sourceUrl": "https://pixabay.com/de/vectors/pfeffer-paprika-gem%C3%BCse-lebensmittel-154377/"
+  },
+  {
+    "filename": "preset/17fruitjuice.jpg",
+    "label": "Orange juice",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: Pixabay",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/selektive-fokusfotografie-von-reinem-orangensaft-158053/"
+  },
+  {
+    "filename": "preset/63sea-buckthorn-juice.jpg",
+    "label": "Sea buckthorn juice",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: Mareefe",
+    "sourceUrl": "https://pixabay.com/de/photos/der-saft-ern%C3%A4hrung-lebensmittel-1651219/"
+  },
+  {
+    "filename": "preset/32carrotjuice.jpg",
+    "label": "Carrot juice",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: 1195798",
+    "sourceUrl": null
+  },
+  {
+    "filename": "preset/31tomatojuice.jpg",
+    "label": "Tomato juice",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: PublicDomainPictures",
+    "sourceUrl": null
+  },
+  {
+    "filename": "preset/52multivitamin.jpg",
+    "label": "Multivitamin juice",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: balt",
+    "sourceUrl": "https://pixabay.com/de/photos/fr%C3%BCchte-saft-ananas-mango-465832/"
+  },
+  {
+    "filename": "preset/50cherryjuice.jpg",
+    "label": "Sour cherry/acerola juice",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: olga-filo",
+    "sourceUrl": "https://pixabay.com/de/photos/beeren-kirschen-erdbeere-der-saft-4201069/"
+  },
+  {
+    "filename": "preset/51bloodorangejuice.jpg",
+    "label": "Blood orange juice",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: MindBodySpritWorld",
+    "sourceUrl": "https://pixabay.com/de/photos/blutorange-orange-gesund-orangen-3780313/"
+  },
+  {
+    "filename": "preset/34cookedtomatoe.jpg",
+    "label": "boiled/ cooked",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: Einladung_zum_Essen",
+    "sourceUrl": "https://pixabay.com/de/photos/tomaten-bl%C3%A4tterteig-tarte-torte-1822187/"
+  },
+  {
+    "filename": "preset/33drytomatoe.jpg",
+    "label": "dried",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: RitaE",
+    "sourceUrl": "https://pixabay.com/de/photos/tomaten-%C3%B6l-kr%C3%A4uter-garen-trocknen-5325850/"
+  },
+  {
+    "filename": "preset/60tomato_soup.jpg",
+    "label": "Soup",
+    "licenseUrl": "https://pixabay.com/de/service/terms/",
+    "licenseName": "Pixabay Lizenz",
+    "sourceInfo": "Pixabay: tortic84",
+    "sourceUrl": "https://pixabay.com/de/photos/tomatensuppe-die-suppe-p%C3%BCree-2288056/"
+  },
+  {
+    "filename": "preset/21sieved.jpg",
+    "label": "Sstrained Tomatoes",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels: elif tekkaya",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/lebensmittel-tomaten-kochen-zutat-4361645/"
+  },
+  {
+    "filename": "preset/59tomato_paste.jpg",
+    "label": "Tomato Paste",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/2.0/de/deed.en",
+    "licenseName": "CC BY-NC-SA 2.0 DE: Attribution-NonCommercial-ShareAlike 2.0 Germany",
+    "sourceInfo": "flickr: Eri•chan (modified by excerpt)",
+    "sourceUrl": "https://www.flickr.com/photos/18499466@N00"
+  },
+  {
+    "filename": "preset/23ketchup.jpg",
+    "label": "Ketchup",
+    "licenseUrl": "https://unsplash.com/de/lizenz",
+    "licenseName": "Unsplash Lizenz",
+    "sourceInfo": "Unsplash: D. L. Samuels",
+    "sourceUrl": "https://unsplash.com/de/fotos/qlBVmQrdfMk"
+  },
+  {
+    "filename": "preset/20pizza.jpg",
+    "label": "Pizza",
+    "licenseUrl": "https://www.pexels.com/license/",
+    "licenseName": "Pexels License",
+    "sourceInfo": "Pexels:  Sydney Troxell",
+    "sourceUrl": "https://www.pexels.com/de-de/foto/geschnittene-pepperoni-pizza-auf-weisser-keramikplatte-708587/"
+  },
+  {
+    "filename": "preset/61pasta.jpg",
+    "label": "Pasta",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "licenseName": "CC BY-SA 4.0: Attribution-ShareAlike 4.0 International",
+    "sourceInfo": "Wikimedia.org: MOs810",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Food_in_Lichen_Stary_(spaghetti_bolognese).jpg"
+  }
+]

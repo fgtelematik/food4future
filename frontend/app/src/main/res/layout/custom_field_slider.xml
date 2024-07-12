@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/valSliderTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Happinesss Level"
+            android:layout_marginBottom="@dimen/custom_form_label_margin"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/valSliderTitleHelper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a helper text"
+            android:textSize="14sp" />
+
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/valSlider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Slider"
+            android:value="3.0"
+            android:valueFrom="0.0"
+            android:valueTo="5.0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/valSliderMinDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Very Sad"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/valSliderMaxDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Very Happy"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

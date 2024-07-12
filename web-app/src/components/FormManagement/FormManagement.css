@@ -1,0 +1,95 @@
+/*
+ * f4f Study Management Portal (Web App)
+ *
+ * Copyright (c) 2024 Technical University of Applied Sciences Wildau
+ * Author: Philipp Wagner, Research Group Telematics
+ * Contact: fgtelematik@th-wildau.de
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation version 2.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+.enum-preview-field-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+
+    > :first-child {
+        width: 100%;
+    }
+}
+
+.enum-items-container {
+    padding: 1em;
+    align-items: start;
+}
+
+.enum-items-container, .enum-items-container > div {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.enum-item-row {
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+h2 {
+    font-size: medium;
+}
+
+.permissions-card {
+    padding: 1em;
+
+
+    min-width: 500px;
+}
+
+.permissions-table {
+    width: auto;
+    border-collapse: collapse;
+    margin-top: 0.5em;
+
+    & td, & th {
+        padding: 0 0.5em;
+    }
+
+    & tr th {
+        text-align: left;
+    }
+
+}
+
+.text-with-fields {
+    margin: 0.5em;
+    > p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .periodic-display-days-input {
+        width: 5em;
+        padding: 0;
+    }
+
+    .periodic-display-day-one-input {
+        width: 7em;
+        padding: 0;
+    }
+}

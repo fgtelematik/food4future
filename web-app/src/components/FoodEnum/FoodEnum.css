@@ -1,0 +1,78 @@
+﻿/*
+ * f4f Study Management Portal (Web App)
+ *
+ * Copyright (c) 2024 Technical University of Applied Sciences Wildau
+ * Author: Philipp Wagner, Research Group Telematics
+ * Contact: fgtelematik@th-wildau.de
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation version 2.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ */
+
+.enum-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.enum-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.enum-item > * {
+    flex: 1;
+}
+
+.mini-image {
+    --image-height: 35px;
+
+    width: calc(var(--image-height) * 1.5);
+    height: var(--image-height);
+    
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.enum-transition-editor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.enum-transition {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    h4 {
+        margin-bottom: 10px;
+    }
+    .side-by-side {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+    
+    .side-by-side > div ,
+    .side-by-side > h4 
+    { /* affects only the input elements and title, not the icons. yes, it's quick & dirty . */ 
+        flex-grow: 1;
+    }
+
+}

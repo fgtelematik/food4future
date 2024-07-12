@@ -1,0 +1,24 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="server_preset_labels">
+<!--        <item>Home Office (ThinkPad)</item>-->
+<!--        <item>Home Office (HP Omen)</item>-->
+        <item>Eduroam (ThinkPad)</item>
+        <item>Eduroam (Legion)</item>
+        <item>TH Wildau (Test)</item>
+        <item>TH Wildau (Production)</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string-array name="server_preset_values">
+        <item>http://10.160.4.234:8000/</item>
+        <item>http://10.160.7.141:8000/</item>
+        <item>https://f4f.tm.th-wildau.de:8443/</item>
+        <item>https://f4f.tm.th-wildau.de/</item>
+        <item>custom</item>
+    </string-array>
+
+    <string name="server_endpoint_release" translatable="false" >https://f4f.tm.th-wildau.de/</string>
+    <string name="server_name_release" translatable="false" >TH Wildau</string>
+    <string name="server_endpoint_debug" translatable="false">https://f4f.tm.th-wildau.de:8443/</string>
+</resources>

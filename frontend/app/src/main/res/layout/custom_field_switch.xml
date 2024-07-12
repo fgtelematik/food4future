@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <CheckBox
+            android:id="@+id/valCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/valTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Label"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/valTextHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/custom_form_label_margin"
+
+        android:textSize="14sp"
+        tools:ignore="HardcodedText"
+        android:text="HelpText" />
+
+    <TextView
+        android:id="@+id/valTextError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/custom_form_label_margin"
+        tools:ignore="HardcodedText"
+
+        android:textSize="14sp"
+        android:textColor="@color/colorRed"
+        android:text="Error Text" />
+
+</LinearLayout>

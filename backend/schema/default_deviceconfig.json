@@ -1,0 +1,80 @@
+{
+    "food_input_reminder_time" : "2100",
+    "sensors_used": ["Garmin"],
+    "cosinuss_wearing_reminder_time" : "1930",
+    "cosinuss_wearing_time_begin" : "1900",
+    "cosinuss_wearing_time_end" : "2200",
+    "cosinuss_wearing_time_duration" : "0045",
+    "garmin_license_key" : "",
+    "server_autosync_interval_minutes" : 120,
+    "sensor_autosync_interval_minutes" : 60,
+    "server_sync_max_age_minutes" : 240,
+    "sensor_sync_max_age_minutes": 120,
+    "garmin_logging" :
+    {
+            "BBI" :
+                {
+                    "default" : null,
+                    "min" : null,
+                    "max" : null,
+                    "enabled" : true,
+                    "interval" : null
+                },
+            "ZERO_CROSSING" :
+                {
+                    "default" : 30,
+                    "min" : 30,
+                    "max" : 3600,
+                    "enabled" : true,
+                    "interval" : 30
+                },
+            "STEPS" :
+                {
+                    "default" : 60,
+                    "min" : 60,
+                    "max" : 60,
+                    "enabled" : true,
+                    "interval" : 60
+                },
+            "STRESS" :
+                {
+                    "default" : 10,
+                    "min" : 1,
+                    "max" : 3600,
+                    "enabled" : true,
+                    "interval" : 10
+                },
+            "HEART_RATE" :
+                {
+                    "default" : 30,
+                    "min" : 1,
+                    "max" : 3600,
+                    "enabled" : true,
+                    "interval" : 30
+                },
+            "SPO2" :
+                {
+                    "default" : 30,
+                    "min" : 1,
+                    "max" : 3600,
+                    "enabled" : false,
+                    "interval" : 30
+                },
+            "RESPIRATION" :
+                {
+                    "default" : 10,
+                    "min" : 1,
+                    "max" : 3600,
+                    "enabled" : false,
+                    "interval" : 10
+                },
+            "ACCELEROMETER" :
+                {
+                    "default" : 30,
+                    "min" : 1,
+                    "max" : 3600,
+                    "enabled" : false,
+                    "interval" : 30
+                }
+    }
+}

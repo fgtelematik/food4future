@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="release_notes">
+        <!-- v27 -->
+        <item>Versoinshinweise werden mit v29 eingeführt.</item>
+
+        <!-- v29 -->
+        <item>
+Verbesserungen:\n
+\n
+* Darstellung dieser Versionshinweise nach App-Updates\n
+\n
+* Senden von Fehlerberichten bei unerwarteten App-Abstürzen, die der TH Wildau ermöglichen, die Ursachen solcher Abstürze nachvollziehen zu können\n
+\n
+\n
+Fehlerbehebungen:\n
+\n
+* Plus-Button zum Hinzufügen neuer Nahrungsmittel bei größeren Systemschriftgrößen war abgeschnitten\n
+\n
+* Fragen-Tagebuch: Status des jeweiligen Tages in der Tabelle war abgeschnitten bei größeren Systemschriftgrößen\n
+\n
+* Mögliche Abstürze der App bei zu vielen lokal gespeicherten Sensordaten:\n
+  Erfasste Sensordaten wurden nicht vollständig vom Smartphone gelöscht, wenn sie bereits an den Server übertragen wurden\n
+\n
+* Tägliche Fragen und Teilnehmendenprofil:\n
+  Eingegebene Daten gingen verloren, wenn das Smartphone gedreht wurde
+        </item>
+
+        <!-- v30 -->
+        <item>
+Verbesserungen:\n
+\n
+* Kompatibilität mit neuer cosinuss° One Firmware\n\
+        </item>
+
+        <!-- v31 -->
+        <item>
+Diese Aktualisierung dient der Gewährleistung der Kompatibilität mit den neu ausgegebenen cosinuss° One Geräten, welche seitens des Herstellers mit einer überarbeiteten Firmware ausgestattet wurden. \n
+\n
+Fehlerbehebungen:\n
+\n
+* Signalqualität zeigte permanent 6% bei cosinuss° One Geräten mit neuer Firmware \n
+\n
+Verbesserungen:\n
+\n
+* Toleranzen für die Darstellung der Signalqualität wurden angepasst \n
+* Signalqualität von nun an als Wort anstatt als Prozentzahl dargestellt \n
+* Es wird nun die Information übertragen, ob ein cosinuss° One mit neuer oder mit alter Firmware eingesetzt wird, da diese Unterscheidung für die Datenauswertung relevant ist
+        </item>
+
+        <!-- v32 -->
+        <item>
+Fehlerbehebungen:\n
+\n
+* Eine manuell ausgelöste Server-Synchronisierung (nur möglich falls zu lange kein WLAN verfügbar war) läuft nun im Hintergrund und blockiert nicht mehr die gesamte App. \n
+* Absturz der App beim Betätigen des Zurück-Buttons und Verwerfen der Änderungen im Teilnehmendenprofil \n
+\n
+Verbesserungen:\n
+\n
+* Der Status eines manuell ausgelösten Synchronisierungsprozesses ist nun im Status-Bildschirm eingebettet und nicht mehr in einem separaten Fortschrittsdialog dargestellt. \n
+        </item>
+
+        <!-- v34 -->
+        <item>
+Fehlerbehebungen:\n
+\n
+* Die Anzahl der während eines Synchronisierungsvorgangs übertragener Datensätze wurde limitiert, da es sonst zu Speicherüberläufen kam,
+wodurch überhaupt keine Übertragung der Studiendaten mehr durchgeführt werden konnte, wenn innerhalb der Studienlaufzeit zu lange keine WLAN-Verbindung verfügbar war. \n
+* Update des lokalen Datenbanksystems \n
+\n
+Verbesserungen:\n
+\n
+* keine \n
+        </item>
+
+        <!-- v36 -->
+        <item>
+Änderungen/Verbesserungen:\n
+\n
+* Migration auf Garmin Health SDK v3.5.4 \n
+* Kompatibilität mit neuer Server API Version \n
+* Unterstützung von benutzerspezifischen Schemas und Strukturen  \n
+* Auswahl des Servers beim Login \n
+* Bestimmung des Servers anhand Login QR Code \n
+* Unterstützung von Studien ohne tägliche Fragen \n
+* serverseitig kann ausgewählt werden, welche Sensoren in der Studie genutzt werden \n
+* Problem mit Android 13 behoben (Benachrichtigungen wurden nicht angezeigt) \n
+* Datenschema: Unterstützung für "foodId" hinzugefügt \n
+\n
+        </item>
+
+
+        <!-- v37 -->
+        <item>
+Fehlerbehebungen:\n
+\n
+* Testserver wurde im Release Build als Zielserver eingestellt, wenn die Einstellungen vor dem ersten Login geöffnet wurden. \n
+* Synchronisierungsbenachrichtung bleibt hängen, wenn Garmin Gerät während des Synchronisierungsprozesses entkoppelt wird \n
+\n
+        </item>
+
+        <!-- v38 -->
+        <item>
+Fehlerbehebungen:\n
+\n
+*  App hängt fest in Dialogschleife beim Start unter Android 12 und früheren Versionen \n
+\n
+        </item>
+
+        <!-- v39 -->
+        <item>
+Fehlerbehebungen:\n
+\n
+*  fehlerhafte Darstellung der Bild-Lizenzinformationen \n
+*  Absturz, wenn App im Hintergrund geöffnet wird  \n
+*  in manchen Android-Versionen werden Erinnerungsbenachrichtigungen zur falschen Zeit angezeigt \n
+*  Unter bestimmten Voraussetzungen wird "null" anstelle des Namens des Nahrungsmittels angezeigt \n
+*  Manuelle Mengenangaben werden im falschen Format im Datensatz abgelegt \n
+*  Markierung der täglichen Fragen als beantwortet auch wenn noch nicht beantwortet, falls alle möglichen Antworten optional sind. \n
+*  der aktuelle Studientag wird auch für Profile angezeigt, die nicht die Rolle Studienteilnehmer(-in) innehaben \n
+\n
+Verbesserungen:\n
+*  Neuimplementierung der Generierung der Zusammenfassung eines Nahrungskonsums (Eintrag in der Nahrungs-Liste)  \n
+*  Unterstützung für unterschiedliche Bezeichner eines Nahrungsmittels in der Auswahlkachel und der Zusammenfassung \n
+*  Der Barcode-Scanner kann nun als beliebeges Element in der Hierarchie der Auswahlbildischirme für den Nahrungskonsum eingebunden werden\n
+*  Diese Versionshinweise können über das Kontextmenü eingeblendet werden \n
+\n
+        </item>
+
+
+        <!-- v40 -->
+        <item>
+Fehlerbehebungen:\n
+\n
+* Wenn Nahrungskonsum vor Fragen des Tages angegeben wurde, wurden zwei unabhängige Fragen-Datensätze pro Tag erzeugt \n
+* Hinweis zur Eingabe der Fragen des Tages fehlte auf Tagebuch-Bildschirm \n
+\n
+        </item>
+
+        <!-- v41 -->
+        <item>
+Fehlerbehebungen:\n
+\n
+* App stürzt ab bei Login-Versuch, falls der Server mit Fehlermeldung antwortet. \n
+\n
+        </item>
+
+        <!-- v42 -->
+        <item>
+Verbesserungen:\n
+\n
+* Unterstützung für Checkbox-Formularfelder hinzugefügt \n
+\n
+        </item>
+
+    </string-array>
+
+</resources>

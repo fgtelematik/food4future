@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="2dp"
+    android:minHeight= "140dp"
+    android:layout_weight="1">
+
+    <Button
+        android:hyphenationFrequency = "full"
+        android:id="@+id/text_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/mdtp_transparent_black"
+        android:textSize="25sp"
+        android:text="Sonstige"
+        android:shadowColor="#000000"
+        android:shadowDx="2.5"
+        android:shadowDy="2.3"
+        android:shadowRadius="1"
+        android:backgroundTint="@color/colorEnumTileBg"
+        />
+
+</FrameLayout>

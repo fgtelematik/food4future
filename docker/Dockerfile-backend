@@ -1,0 +1,6 @@
+FROM python:3.10.6
+WORKDIR /opt/f4f-backend
+COPY ./backend/ /opt/f4f-backend/
+COPY ./backend/schema/default_config.json /opt/f4f-backend/config.json
+RUN pip install pipenv && pipenv sync
+ENTRYPOINT ["pipenv", "run", "python", "main.py"]

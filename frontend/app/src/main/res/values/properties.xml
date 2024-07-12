@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backendAuthToken" translatable="false">auth_token</string>
+    <string name="currentUserJson" translatable="false">current_user</string>
+    <string name="lastGarminSensorSyncTime" translatable="false">last_sync_garmin</string>
+    <string name="lastCosinussSensorConnectionTime" translatable="false">last_sync_garmin</string>
+    <string name="deviceConfig" translatable="false">device_config</string>
+    <string name="lastServerSyncTime" translatable="false">last_sync_server</string>
+    <string name="keepShowingReleaseNotes" translatable="false">last_sync_server</string>
+    <string name="dataModified" translatable="false">sync_modified</string>
+    <string name="cachedAPKversionCode" translatable="false">cached_apk_version_code</string>
+    <string name="lastUsedAPKversionCode" translatable="false">last_used_apk_version_code</string>
+
+</resources>
